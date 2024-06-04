@@ -1,0 +1,236 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    background-position: center;
+    color: #eeeeee;
+  }
+  
+  h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+    color: #eeeeee;
+  }
+  
+  h1 {
+    color: #eeeeee;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .header, .main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  header {
+    background-color: rgba(109, 109, 109, 0.9); 
+    color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* header button {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #eeeeee;
+    border: 1px solid #5585b5;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #5585b5;
+
+  }
+  
+  header button:hover {
+    background-color: #004d40;
+  } */
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #eeeeee;
+    border: 1px solid #5585b5;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #5585b5;
+  }
+
+  nav ul li a:hover {
+    background-color: #5585b5;
+    color: white;
+}
+.button {
+    background-color: #5585b5;
+    color: #eeeeee;
+    /* padding: 7px 10px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 6px 4px; */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #eeeeee;
+    color: #5585b5;
+}
+
+  
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    background: rgba(109, 109, 109, 0.9); 
+    color: #eeeeee;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .search-bar {
+    width: calc(70% - 20px); 
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    background: rgb(242, 242, 242);
+    color: #6d6d6d;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  button.search-btn {
+    padding: 10px 20px; 
+    border: none;
+    background-color: rgba(85, 133, 181, 0.8);
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  button.search-btn:hover {
+    background-color: rgba(0, 77, 64, 0.8);
+  }
+  
+  .weather {
+    transition: opacity 0.5s;
+  }
+  
+  .weather.loading {
+    opacity: 0.5;
+  }
+  
+  .city {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .temp {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .description {
+    font-size: 1.2em;
+  }
+  
+  .humidity, .wind {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  #uyarı {
+    background-color: rgba(109, 109, 109, 0.9); 
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+  }
+  
+  #uyarı h3 {
+    color: #eeeeee;
+  }
+  
+  #hourly-forecast {
+    background-color: rgba(109, 109, 109, 0.9); 
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #uyarı, #hourly-forecast {
+      position: static;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/main.js"></script>
+    <script src="/showPassword"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/mainform" class="buttonm">Anasayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="loginform" class="container">
+        <h1>Giriş</h1>
+        <form id="loginform" method="post">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required name="email"><br><br>
+
+            <label for="password">Şifre</label>
+            <div class="password-container">
+                <input type="password" id="password" required name="password">
+                <i class="fas fa-eye" id="togglePassword"></i>
+            </div><br><br>
+           <button type="submit">Giriş</button>
+        </form>
+        <div class="message-container">
+            <p class="message" th:text="${message}" th:if="${message}"></p>
+        </div>
+    </div>
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+    }
+);
+    </script>
+</body>
+</html>

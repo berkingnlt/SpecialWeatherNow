@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #6d6d6d;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #eeeeee;
+    border: 1px solid #5585b5;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #5585b5;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #eeeeee;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: calc(100% - 22px); 
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: calc(100% - 22px); 
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 48%;
+    transform: translateY(-100%);
+    cursor: pointer;
+    color: black;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5585b5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eeeeee;
+    color: #5585b5;
+}
+
+.container {
+    position: relative;
+    background: rgba(109, 109, 109, 0.9); 
+    padding: 40px 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 100px; 
+    color: #eeeeee; 
+}
+
+.buttonm {
+    background-color: #5585b5;
+    color: #eeeeee;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.buttonm:hover {
+    background-color: #eeeeee;
+    color: #5585b5;
+}
+
+ .success-message {
+    display: none;
+    color: #5585b5;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
